@@ -8,14 +8,17 @@ import { PainelModule } from './painel/painel.module';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { ListagemComponent } from './listagem/listagem.component';
 import { routing } from './app.routes';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({ // Modulo do angular
     imports: [
-        BrowserModule, 
-        FotoModule, 
-        HttpModule, 
+        BrowserModule,
+        FotoModule,
+        HttpModule,
         PainelModule,
-        routing
+        routing,
+        FormsModule,
+        ReactiveFormsModule
     ], // Dependencia de modulos da minha aplicação principal
     declarations: [AppComponent, CadastroComponent, ListagemComponent], // o que faz parte do modulo.
     bootstrap: [AppComponent] // quem eu quero iniciar.
