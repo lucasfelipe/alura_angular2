@@ -9,6 +9,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { ListagemComponent } from './listagem/listagem.component';
 import { routing } from './app.routes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BotaoModule } from './botao/botao.module';
+import { ModalModule } from './modal/modal.module';
 
 @NgModule({ // Modulo do angular
     imports: [
@@ -18,7 +20,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         PainelModule,
         routing,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        BotaoModule,
+        ModalModule
     ], // Dependencia de modulos da minha aplicação principal
     declarations: [AppComponent, CadastroComponent, ListagemComponent], // o que faz parte do modulo.
     bootstrap: [AppComponent] // quem eu quero iniciar.
